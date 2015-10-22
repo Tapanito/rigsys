@@ -1,0 +1,30 @@
+           *******************************************************
+                       Semantic Analysis of SPARK Text
+                              Examiner GPL 2012
+             Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+           *******************************************************
+
+
+                        DATE : 22-OCT-2015 13:17:49.75
+
+                       procedure EscapeValve.Activate
+
+
+
+
+For path(s) from start to finish:
+
+procedure_activate_1.
+*** true .          /* trivially true VC removed by Examiner */
+
+
+For checks of refinement integrity: 
+
+procedure_activate_2.
+*** true .          /* trivially true VC removed by Examiner */
+
+
+procedure_activate_3.
+*** true .          /* trivially true VC removed by Examiner */
+
+

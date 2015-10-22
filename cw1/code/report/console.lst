@@ -1,0 +1,89 @@
+           *******************************************************
+                            Listing of SPARK Text
+                              Examiner GPL 2012
+             Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+           *******************************************************
+
+
+                        DATE : 22-OCT-2015 13:17:49.58
+
+Line
+   1  package  body Console is   
+   2     procedure Enable_Reset 
+   3     is
+   4     begin
+   5          Reset_Status := True;
+   6     end Enable_Reset;
+
++++        Flow analysis of subprogram Enable_Reset 
+           performed (information-flow mode): no errors found.
+
+   7  
+   8     procedure Disable_Reset 
+   9     is
+  10     begin
+  11          Reset_Status := False;
+  12     end Disable_Reset;
+
++++        Flow analysis of subprogram Disable_Reset 
+           performed (information-flow mode): no errors found.
+
+  13  
+  14     function Reset_Enabled return Boolean
+  15     is
+  16     begin
+  17          return Reset_Status;
+  18     end Reset_Enabled;
+
++++        Flow analysis of subprogram Reset_Enabled 
+           performed (information-flow mode): no errors found.
+
+  19     
+  20     procedure Inc_Alarm_Cnt
+  21     is
+  22     begin
+  23        -- prevent overflow
+  24        if Alarm_Cnt < Integer'Last then
+  25          Alarm_Cnt := Alarm_Cnt + 1;
+  26        end if;
+  27     end Inc_Alarm_Cnt;
+
++++        Flow analysis of subprogram Inc_Alarm_Cnt 
+           performed (information-flow mode): no errors found.
+
+  28     
+  29     procedure Reset_Alarm_Cnt
+  30     is
+  31     begin
+  32          Alarm_Cnt := 0;
+  33     end Reset_Alarm_Cnt;
+
++++        Flow analysis of subprogram Reset_Alarm_Cnt 
+           performed (information-flow mode): no errors found.
+
+  34        
+  35     function Alarm_Cnt_Value return Integer
+  36     is
+  37     begin
+  38          return Alarm_Cnt;
+  39     end Alarm_Cnt_Value;
+
++++        Flow analysis of subprogram Alarm_Cnt_Value 
+           performed (information-flow mode): no errors found.
+
+  40  begin
+  41      -- init
+  42      Reset_Status := False;
+  43      Alarm_Cnt := 0;
+  44  end Console;
+
++++        Flow analysis of package initialization 
+           performed: no errors found.
+
+  45  
+  46  
+
+Note: Flow analysis mode is automatic
+
+
+--End of file--------------------------------------------------

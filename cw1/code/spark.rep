@@ -1,0 +1,77 @@
+           *******************************************************
+                         Report of SPARK Examination
+                              Examiner GPL 2012
+             Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+           *******************************************************
+
+
+                        DATE : 20-OCT-2015 12:46:21.81
+
+Options:
+    noswitch
+    noindex_file
+    nowarning_file
+    notarget_compiler_data
+    noconfig_file
+    source_extension=ada
+    listing_extension=lst
+    nodictionary_file
+    report_file=spark.rep
+    nohtml
+    nostatistics
+    fdl_identifiers=accept
+    flow_analysis=auto
+    language=95
+    profile=sequential
+    annotation_character=#
+    rules=lazy
+    error_explanations=off
+    justification_option=full
+    output_directory=.
+    output_directory (actual)=/home/tapanito/university/rigsys/cw1/code/
+
+Selected files:
+   @console.smf
+
+
+No Index files were used
+
+
+Meta File(s) used were:
+   console.smf
+      /home/tapanito/university/rigsys/cw1/code/console.ads
+      /home/tapanito/university/rigsys/cw1/code/console.adb
+
+
+Full warning reporting selected
+
+
+Source Filename(s) used were:
+   /home/tapanito/university/rigsys/cw1/code/console.ads
+   /home/tapanito/university/rigsys/cw1/code/console.adb
+
+
+
+Source Filename:   /home/tapanito/university/rigsys/cw1/code/console.ads
+Listing Filename:  /home/tapanito/university/rigsys/cw1/code/console.lst
+
+   Unit name:  Console
+   Unit type:  package specification
+   Unit has been analysed, any errors are listed below.
+
+No errors found
+
+
+Source Filename:   /home/tapanito/university/rigsys/cw1/code/console.adb
+Listing Filename:  /home/tapanito/university/rigsys/cw1/code/console.lst
+
+   Unit name:  Console
+   Unit type:  package body
+   Unit has been analysed, any errors are listed below.
+
+No errors found
+
+Note: Automatic flow analysis mode selected
+
+
+--End of file--------------------------------------------------

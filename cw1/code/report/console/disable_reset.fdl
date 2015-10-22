@@ -1,0 +1,17 @@
+           {*******************************************************}
+                               {FDL Declarations}
+                              {Examiner GPL 2012}
+             {Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.}
+           {*******************************************************}
+
+
+                        {DATE : 22-OCT-2015 13:17:49.51}
+
+                      {procedure Console.Disable_Reset}
+
+
+title procedure disable_reset;
+
+  function round__(real) : integer;
+
+end;

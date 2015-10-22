@@ -1,0 +1,69 @@
+           *******************************************************
+                            Listing of SPARK Text
+                              Examiner GPL 2012
+             Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+           *******************************************************
+
+
+                        DATE : 22-OCT-2015 13:17:49.82
+
+Line
+   1  with Sensors, Console, Alarm, EscapeValve;
+   2  package body AVP
+   3  is
+   4     procedure Control is
+   5          Sensor_Value: Sensors.Sensor_Type;
+   6     begin 
+   7  
+   8          Sensor_Value := Sensors.Read_Sensor_Majority;
+   9     
+  10          if EscapeValve.Activated = False then
+  11  
+  12              -- if normal
+  13              if (Sensor_Value < 100) then
+  14                  
+  15                  -- if alarm is active
+  16                  if Alarm.Enabled = True then
+  17                      Alarm.Disable;
+  18                  end if;
+  19              elsif (Sensor_Value >= 100) then
+  20                  -- check if value got reduced
+  21                  -- if high
+  22                  if(Sensor_Value <= 149) then
+  23                      -- enable alarm
+  24                      if Alarm.Enabled = False then
+  25                          Alarm.Enable;
+  26  
+  27                      else -- if the alarm has already been activated activate the valve  
+  28                              EscapeValve.Activate;
+  29                      end if;
+  30                  -- if critical
+  31                  elsif (Sensor_Value >= 150) then
+  32                      -- activate escape valve
+  33                      EscapeValve.Activate;
+  34                      -- if alarm not active - activate
+  35                      if Alarm.Enabled = False then
+  36                          Alarm.Enable;
+  37                      end if;
+  38                  end if;
+  39              end if;
+  40          end if;
+  41          
+  42          -- if reset mechanism is enabled
+  43          if Console.Reset_Enabled = True then
+  44              Alarm.Disable;
+  45              EscapeValve.Deactivate;
+  46          end if;
+  47  
+  48     end Control;
+
++++        Flow analysis of subprogram Control performed 
+           (data-flow mode): no errors found.
+
+  49     
+  50  end AVP;
+
+Note: Flow analysis mode is automatic
+
+
+--End of file--------------------------------------------------

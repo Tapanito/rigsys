@@ -1,0 +1,144 @@
+V "GNAT Lib v2015"
+P ZX
+
+RN
+RV NO_ENUMERATION_MAPS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U handler%b		handler.adb		e8c23aeb OO PK
+Z ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.text_io%s		a-textio.adb		a-textio.ali
+Z ada.text_io.enumeration_aux%s  a-tienau.adb	a-tienau.ali
+W ada.text_io.enumeration_io%s
+Z ada.text_io.integer_aux%s  a-tiinau.adb	a-tiinau.ali
+W ada.text_io.integer_io%s
+W alarm%s		alarm.adb		alarm.ali
+W console%s		console.adb		console.ali
+W escapevalve%s		escapevalve.adb		escapevalve.ali
+W interfaces%s		interfac.ads		interfac.ali
+W sensors%s		sensors.adb		sensors.ali
+W system%s		system.ads		system.ali
+W system.img_enum_new%s	s-imenne.adb		s-imenne.ali
+W system.val_enum%s	s-valenu.adb		s-valenu.ali
+W text_io%s		text_io.ads		text_io.ali
+
+U handler%s		handler.ads		762dec1c EE NE OO PK
+W ada.tags%s		a-tags.adb		a-tags.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-except.ads		20150506105328 5250cb69 ada.exceptions%s
+D a-ioexce.ads		20150506105327 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20150506105329 119b8fb3 ada.streams%s
+D a-tags.ads		20150506105332 dc4d0634 ada.tags%s
+D a-textio.ads		20150506105332 386df5d4 ada.text_io%s
+D a-tienau.ads		20150506105328 6a9c157b ada.text_io.enumeration_aux%s
+D a-tienio.ads		20150506105327 fc618ae6 ada.text_io.enumeration_io%s
+D a-tienio.adb		20150506105330 c9e6b5af ada.text_io.enumeration_io%b
+D a-tiinau.ads		20150506105329 8114c8e4 ada.text_io.integer_aux%s
+D a-tiinio.ads		20150506105328 aa04e5d6 ada.text_io.integer_io%s
+D a-tiinio.adb		20150506105329 df9cd7af ada.text_io.integer_io%b
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D alarm.ads		20151021092734 3c138346 alarm%s
+D console.ads		20151021091339 076e0c60 console%s
+D escapevalve.ads	20151020095613 6257756b escapevalve%s
+D handler.ads		20150920090723 762dec1c handler%s
+D handler.adb		20150920090728 295936ae handler%b
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-cstrea.ads		20150506105327 e53d8b8e interfaces.c_streams%s
+D sensors.ads		20151020095515 ab4a3cdd sensors%s
+D system.ads		20150506105329 1d274481 system%s
+D s-crtl.ads		20150506105326 0ebbdb71 system.crtl%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-ficobl.ads		20150506105333 078245e4 system.file_control_block%s
+D s-imenne.ads		20150506105328 614c06c0 system.img_enum_new%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-soflin.ads		20150506105328 aa763b52 system.soft_links%s
+D s-stache.ads		20150506105332 a37c21ec system.stack_checking%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D s-stoele.ads		20150506105332 2dc34a04 system.storage_elements%s
+D s-traent.ads		20150506105327 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20150506105330 9d58a4c0 system.unsigned_types%s
+D s-valenu.ads		20150506105331 bb1a4295 system.val_enum%s
+D s-wchcon.ads		20150506105330 1b7d22d2 system.wch_con%s
+D text_io.ads		20150506105330 45d626c9 text_io%s
+X 6 a-textio.ads
+52P9*File_Type 18|23r22 80r22
+53n23*In_File{53E9} 18|65r38
+53n32*Out_File{53E9} 18|125r40
+86U14*Create 18|125s15
+92U14*Open 18|65s15
+98U14*Close 18|70s15 134s15
+165U14*New_Line 18|120s15
+183V13*End_Of_File{boolean} 18|60s22
+208U14*Put 18|55s15
+241U14*Put 18|105s18 107s18 110s18 112s18 115s18 117s18
+259U14*Put_Line 18|126s15 128s15
+263U14*Put_Line 18|71s15
+X 8 a-tienio.ads
+26k21*Enumeration_IO 55e31 18|75r40
+34U14*Put 18|100s20[75] 101s20[75] 102s20[75] 103s20[75]
+X 11 a-tiinio.ads
+46k21*Integer_IO 85e27 18|25r41
+51U14*Get 18|45s21[25] 46s21[25] 47s21[25] 48s21[25]
+60U14*Put 18|119s21[25]
+X 14 alarm.ads
+2K9*Alarm 19e10 18|19w24 104r10
+16V13*Enabled{boolean} 18|104s16
+X 15 console.ads
+1K10*Console 30e12 18|19w44 51r10 53r10 114r10 119r35
+8U14*Enable_Reset 18|51s18
+12U14*Disable_Reset 18|53s18
+16V13*Reset_Enabled{boolean} 18|114s18
+27V13*Alarm_Cnt_Value{integer} 18|119s43
+X 16 escapevalve.ads
+1K9*EscapeValve 16e16 18|19w31 109r10
+13V13*Activated{boolean} 18|109s22
+X 17 handler.ads
+18K9*Handler 38l5 38e12 18|21b14 137l5 137t12
+20I11*Sensor_Range{integer}
+22E8*Pressure_Cat 22e55 18|34r57 75r55 82r80 84r11
+22n25*Normal{22E8} 18|37r37 87r16
+22n33*High{22E8} 18|38r37 89r16
+22n39*Critical{22E8} 18|39r37 91r16
+22n49*Undef{22E8} 18|40r37 93r16
+24U13*Update_Env 18|27b14 56l8 56t18
+26V12*At_End{boolean} 18|58b13 61l8 61t14
+28U13*Open_Env_File 18|63b14 66l8 66t21
+30U13*Close_Env_File 18|68b14 72l8 72t22
+32U13*Update_Log 18|98b14 121l8 121t18
+34U13*Open_Log_File 18|123b14 130l8 130t21
+36U13*Close_Log_File 18|132b14 135l8 135t22
+X 18 handler.adb
+23p4 Env_File{6|52P9} 45r25 46r25 47r25 48r25 60r34 65m20 65r20 70m21 70r21
+25K12 Integer_INOUT[11|46] 45r7 46r7 47r7 48r7 119r7
+29i7 Sensor_1{integer} 45m35 49r29
+30i7 Sensor_2{integer} 46m35 49r39
+31i7 Sensor_3{integer} 47m35 49r49
+32i7 ResetSig{integer} 48m35 50r10
+34V16 Int_To_Sensor_Type{17|22E8} 34b16 34>35 42l11 42t29
+34i35 X{integer} 36r15
+75K12 Sensor_INOUT[8|26] 100r7 101r7 102r7 103r7
+80p4 Log_File{6|52P9} 100r24 101r24 102r24 103r24 105r22 107r22 110r22 112r22
+. 115r22 117r22 119r25 120r24 125m22 125r22 126r24 128r24 134m21 134r21
+82V13 Sensor_2_Pressure_Cat{17|22E8} 82b13 82>35 96l8 96t29 100s34 101s34
+. 102s34 103s34
+82i35 Sensor_Value{21|8I12} 86r10 88r13 90r13
+84e7 PC{17|22E8} 87m10 89m10 91m10 93m10 95r14
+X 21 sensors.ads
+1K9*Sensors 18|19w15 49r7 82r52 100r56 101r56 102r56 103r56 21|21e12
+8I12*Sensor_Type{integer} 18|82r60
+11U14*Write_Sensors 18|49s15
+15V13*Read_Sensor{8I12} 18|100s64 101s64 102s64
+18V13*Read_Sensor_Majority{8I12} 18|103s64
+X 36 text_io.ads
+24K9*Text_IO=24:29 18|19w6 23r14 25r33 55r7 60r14 65r7 65r30 70r7 71r7 75r32
+. 80r14 105r10 107r10 110r10 112r10 115r10 117r10 120r7 125r7 125r32 126r7
+. 128r7 134r7
+

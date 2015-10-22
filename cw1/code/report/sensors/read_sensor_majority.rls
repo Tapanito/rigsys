@@ -1,0 +1,28 @@
+           /*********************************************************/
+                           /*Proof Rule Declarations*/
+                              /*Examiner GPL 2012*/
+             /*Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.*/
+           /*********************************************************/
+
+
+                        /*DATE : 22-OCT-2015 13:17:49.63*/
+
+                   /*function Sensors.Read_Sensor_Majority*/
+
+
+rule_family read_sensor__rules:
+     X      requires [X:any] &
+     X <= Y requires [X:ire, Y:ire] &
+     X >= Y requires [X:ire, Y:ire].
+
+read_sensor__rules(1): undef_value may_be_replaced_by 200.
+read_sensor__rules(2): integer__size >= 0 may_be_deduced.
+read_sensor__rules(3): integer__first may_be_replaced_by -2147483648.
+read_sensor__rules(4): integer__last may_be_replaced_by 2147483647.
+read_sensor__rules(5): integer__base__first may_be_replaced_by -2147483648.
+read_sensor__rules(6): integer__base__last may_be_replaced_by 2147483647.
+read_sensor__rules(7): sensor_type__size >= 0 may_be_deduced.
+read_sensor__rules(8): sensor_type__first may_be_replaced_by 0.
+read_sensor__rules(9): sensor_type__last may_be_replaced_by 200.
+read_sensor__rules(10): sensor_type__base__first may_be_replaced_by -2147483648.
+read_sensor__rules(11): sensor_type__base__last may_be_replaced_by 2147483647.

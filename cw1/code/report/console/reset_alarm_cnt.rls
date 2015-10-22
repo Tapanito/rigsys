@@ -1,0 +1,22 @@
+           /*********************************************************/
+                           /*Proof Rule Declarations*/
+                              /*Examiner GPL 2012*/
+             /*Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.*/
+           /*********************************************************/
+
+
+                        /*DATE : 22-OCT-2015 13:17:49.55*/
+
+                     /*procedure Console.Reset_Alarm_Cnt*/
+
+
+rule_family reset_alarm__rules:
+     X      requires [X:any] &
+     X <= Y requires [X:ire, Y:ire] &
+     X >= Y requires [X:ire, Y:ire].
+
+reset_alarm__rules(1): integer__size >= 0 may_be_deduced.
+reset_alarm__rules(2): integer__first may_be_replaced_by -2147483648.
+reset_alarm__rules(3): integer__last may_be_replaced_by 2147483647.
+reset_alarm__rules(4): integer__base__first may_be_replaced_by -2147483648.
+reset_alarm__rules(5): integer__base__last may_be_replaced_by 2147483647.

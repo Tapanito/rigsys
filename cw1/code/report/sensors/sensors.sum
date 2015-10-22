@@ -1,0 +1,174 @@
+-------------------------------------------------------------------------------
+                          Semantic Analysis Summary                            
+                                POGS GPL 2012                                  
+            Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.               
+-------------------------------------------------------------------------------
+
+Summary of:
+
+Verification Condition files (.vcg)
+Simplified Verification Condition files (.siv)
+Victor result files (.vct)
+Riposte result files (.rsm)
+Proof Logs (.plg)
+Dead Path Conjecture files (.dpc)
+Summary Dead Path files (.sdp)
+
+"status" column keys:
+    1st character:
+        '-' - No VC
+        'S' - No SIV
+        'U' - Undischarged
+        'E' - Proved by Examiner
+        'I' - Proved by Simplifier by Inference
+        'X' - Proved by Simplifier by Contradiction
+        'P' - Proved by Simplifier using User Defined Proof Rules
+        'V' - Proved by Victor
+        'O' - Proved by Riposte
+        'C' - Proved by Checker
+        'R' - Proved by Review
+        'F' - VC is False
+    2nd character:
+        '-' - No DPC
+        'S' - No SDP
+        'U' - Unchecked
+        'D' - Dead path
+        'L' - Live path
+
+in the directory:
+/home/tapanito/university/rigsys/cw1/code/report/sensors
+
+Summary produced: 22-OCT-2015 13:19:39.69
+
+File /home/tapanito/university/rigsys/cw1/code/report/sensors/read_sensor.vcg
+function Sensors.Read_Sensor
+
+VCs generated 22-OCT-2015 13:17:49
+
+VCs not simplified
+
+VCs for function_read_sensor :
+ -----------------------------------------------------------------------------
+| #   | From  | To                  | Proved By          | Dead Path | Status |
+|-----------------------------------------------------------------------------
+| 1   | start | rtc check @ 27      | No SIV             | No DPC    |   S-   |
+| 2   | start | rtc check @ 29      | No SIV             | No DPC    |   S-   |
+| 3   | start | rtc check @ 31      | No SIV             | No DPC    |   S-   |
+| 4   | start |    assert @ finish  | No SIV             | No DPC    |   S-   |
+| 5   | start |    assert @ finish  | No SIV             | No DPC    |   S-   |
+| 6   | start |    assert @ finish  | No SIV             | No DPC    |   S-   |
+| 7   | start |    assert @ finish  | No SIV             | No DPC    |   S-   |
+| 8   |       | refinement          | Examiner           | No DPC    |   E-   |
+| 9   |       | refinement          | Examiner           | No DPC    |   E-   |
+ -----------------------------------------------------------------------------
+
+
+File /home/tapanito/university/rigsys/cw1/code/report/sensors/read_sensor_majority.vcg
+function Sensors.Read_Sensor_Majority
+
+VCs generated 22-OCT-2015 13:17:49
+
+VCs not simplified
+
+VCs for function_read_sensor_majority :
+ -----------------------------------------------------------------------------
+| #   | From  | To                  | Proved By          | Dead Path | Status |
+|-----------------------------------------------------------------------------
+| 1   | start | rtc check @ 44      | No SIV             | No DPC    |   S-   |
+| 2   | start | rtc check @ 46      | No SIV             | No DPC    |   S-   |
+| 3   | start | rtc check @ 48      | No SIV             | No DPC    |   S-   |
+| 4   | start | rtc check @ 50      | No SIV             | No DPC    |   S-   |
+| 5   | start |    assert @ finish  | No SIV             | No DPC    |   S-   |
+| 6   | start |    assert @ finish  | No SIV             | No DPC    |   S-   |
+| 7   | start |    assert @ finish  | No SIV             | No DPC    |   S-   |
+| 8   | start |    assert @ finish  | No SIV             | No DPC    |   S-   |
+| 9   |       | refinement          | Examiner           | No DPC    |   E-   |
+| 10  |       | refinement          | Examiner           | No DPC    |   E-   |
+ -----------------------------------------------------------------------------
+
+
+File /home/tapanito/university/rigsys/cw1/code/report/sensors/write_sensors.vcg
+procedure Sensors.Write_Sensors
+
+VCs generated 22-OCT-2015 13:17:49
+
+VCs not simplified
+
+VCs for procedure_write_sensors :
+ -----------------------------------------------------------------------------
+| #   | From  | To                  | Proved By          | Dead Path | Status |
+|-----------------------------------------------------------------------------
+| 1   | start | rtc check @ 15      | No SIV             | No DPC    |   S-   |
+| 2   | start | rtc check @ 16      | No SIV             | No DPC    |   S-   |
+| 3   | start | rtc check @ 17      | No SIV             | No DPC    |   S-   |
+| 4   | start |    assert @ finish  | Examiner           | No DPC    |   E-   |
+| 5   |       | refinement          | Examiner           | No DPC    |   E-   |
+| 6   |       | refinement          | Examiner           | No DPC    |   E-   |
+ -----------------------------------------------------------------------------
+
+
+===============================================================================
+Summary:
+
+The following subprograms have undischarged VCs (excluding those proved false):
+
+   7  /home/tapanito/university/rigsys/cw1/code/report/sensors/read_sensor.vcg
+   8  /home/tapanito/university/rigsys/cw1/code/report/sensors/read_sensor_majority.vcg
+   3  /home/tapanito/university/rigsys/cw1/code/report/sensors/write_sensors.vcg
+
+Proof strategies used by subprograms
+-------------------------------------------------------------------------
+Total subprograms with at least one VC proved by examiner:              3
+Total subprograms with at least one VC proved by simplifier:            0
+Total subprograms with at least one VC proved by contradiction:         0
+Total subprograms with at least one VC proved with user proof rule:     0
+Total subprograms with at least one VC proved by Victor:                0
+Total subprograms with at least one VC proved by Riposte:               0
+Total subprograms with at least one VC proved using checker:            0
+Total subprograms with at least one VC discharged by review:            0
+
+Maximum extent of strategies used for fully proved subprograms:
+-------------------------------------------------------------------------
+Total subprograms with proof completed by examiner:                     0
+Total subprograms with proof completed by simplifier:                   0
+Total subprograms with proof completed with user defined rules:         0
+Total subprograms with proof completed by Victor:                       0
+Total subprograms with proof completed by Riposte:                      0
+Total subprograms with proof completed by checker:                      0
+Total subprograms with VCs discharged by review:                        0
+
+Overall subprogram summary:
+-------------------------------------------------------------------------
+Total subprograms fully proved:                                         0
+Total subprograms with at least one undischarged VC:                    3  <<<
+Total subprograms with at least one false VC:                           0
+                                                                    -----
+Total subprograms for which VCs have been generated:                    3
+
+
+ZombieScope Summary:
+-------------------------------------------------------------------------
+Total subprograms for which DPCs have been generated:                   0
+Total number subprograms with dead paths found:                         0
+Total number of dead paths found:                                       0
+
+
+VC summary:
+-------------------------------------------------------------------------
+Note: (User) denotes where the Simplifier has proved VCs using one or
+      more user-defined proof rules.
+
+Total VCs by type:
+------------------
+                    Total   Examiner    Undisc.
+Assert/Post             9          1          8
+Precondition            0          0          0
+Check stmnt.            0          0          0
+Runtime check          10          0         10
+Refinem. VCs            6          6          0
+Inherit. VCs            0          0          0
+===============================================
+Totals:                25          7         18 <<<
+%Totals:                         28%        72%
+
+===================== End of Semantic Analysis Summary ========================

@@ -1,0 +1,173 @@
+           *******************************************************
+                         Report of SPARK Examination
+                              Examiner GPL 2012
+             Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+           *******************************************************
+
+
+                        DATE : 19-OCT-2015 12:03:09.91
+
+Options:
+    noswitch
+    noindex_file
+    nowarning_file
+    notarget_compiler_data
+    noconfig_file
+    source_extension=ada
+    listing_extension=lst
+    nodictionary_file
+    report_file=spark.rep
+    nohtml
+    nostatistics
+    fdl_identifiers=accept
+    flow_analysis=auto
+    language=95
+    profile=sequential
+    annotation_character=#
+    rules=lazy
+    error_explanations=off
+    justification_option=full
+    output_directory=.
+    output_directory (actual)=/home/tapanito/university/rigsys/cw1/code/
+
+Selected files:
+   @AVP.smf
+
+
+No Index files were used
+
+
+Meta File(s) used were:
+   AVP.smf
+      /home/tapanito/university/rigsys/cw1/code/sensors.ads
+      /home/tapanito/university/rigsys/cw1/code/sensors.adb
+      /home/tapanito/university/rigsys/cw1/code/console.ads
+      /home/tapanito/university/rigsys/cw1/code/console.adb
+      /home/tapanito/university/rigsys/cw1/code/alarm.ads
+      /home/tapanito/university/rigsys/cw1/code/alarm.adb
+      /home/tapanito/university/rigsys/cw1/code/escapevalve.ads
+      /home/tapanito/university/rigsys/cw1/code/escapevalve.adb
+      /home/tapanito/university/rigsys/cw1/code/avp.ads
+      /home/tapanito/university/rigsys/cw1/code/avp.adb
+
+
+Full warning reporting selected
+
+
+Source Filename(s) used were:
+   /home/tapanito/university/rigsys/cw1/code/sensors.ads
+   /home/tapanito/university/rigsys/cw1/code/sensors.adb
+   /home/tapanito/university/rigsys/cw1/code/console.ads
+   /home/tapanito/university/rigsys/cw1/code/console.adb
+   /home/tapanito/university/rigsys/cw1/code/alarm.ads
+   /home/tapanito/university/rigsys/cw1/code/alarm.adb
+   /home/tapanito/university/rigsys/cw1/code/escapevalve.ads
+   /home/tapanito/university/rigsys/cw1/code/escapevalve.adb
+   /home/tapanito/university/rigsys/cw1/code/avp.ads
+   /home/tapanito/university/rigsys/cw1/code/avp.adb
+
+
+
+Source Filename:   /home/tapanito/university/rigsys/cw1/code/sensors.ads
+Listing Filename:  /home/tapanito/university/rigsys/cw1/code/sensors.lst
+
+   Unit name:  Sensors
+   Unit type:  package specification
+   Unit has been analysed, any errors are listed below.
+
+No errors found
+
+
+Source Filename:   /home/tapanito/university/rigsys/cw1/code/sensors.adb
+Listing Filename:  /home/tapanito/university/rigsys/cw1/code/sensors.lst
+
+   Unit name:  Sensors
+   Unit type:  package body
+   Unit has been analysed, any errors are listed below.
+
+No errors found
+
+
+Source Filename:   /home/tapanito/university/rigsys/cw1/code/console.ads
+Listing Filename:  /home/tapanito/university/rigsys/cw1/code/console.lst
+
+   Unit name:  Console
+   Unit type:  package specification
+   Unit has been analysed, any errors are listed below.
+
+No errors found
+
+
+Source Filename:   /home/tapanito/university/rigsys/cw1/code/console.adb
+Listing Filename:  /home/tapanito/university/rigsys/cw1/code/console.lst
+
+   Unit name:  Console
+   Unit type:  package body
+   Unit has been analysed, any errors are listed below.
+
+No errors found
+
+
+Source Filename:   /home/tapanito/university/rigsys/cw1/code/alarm.ads
+Listing Filename:  /home/tapanito/university/rigsys/cw1/code/alarm.lst
+
+   Unit name:  Alarm
+   Unit type:  package specification
+   Unit has been analysed, any errors are listed below.
+
+No errors found
+
+
+Source Filename:   /home/tapanito/university/rigsys/cw1/code/alarm.adb
+Listing Filename:  /home/tapanito/university/rigsys/cw1/code/alarm.lst
+
+   Unit name:  Alarm
+   Unit type:  package body
+   Unit has been analysed, any errors are listed below.
+
+No errors found
+
+
+Source Filename:   /home/tapanito/university/rigsys/cw1/code/escapevalve.ads
+Listing Filename:  /home/tapanito/university/rigsys/cw1/code/escapevalve.lst
+
+   Unit name:  EscapeValve
+   Unit type:  package specification
+   Unit has been analysed, any errors are listed below.
+
+No errors found
+
+
+Source Filename:   /home/tapanito/university/rigsys/cw1/code/escapevalve.adb
+Listing Filename:  /home/tapanito/university/rigsys/cw1/code/escapevalve.lst
+
+   Unit name:  EscapeValve
+   Unit type:  package body
+   Unit has been analysed, any errors are listed below.
+
+No errors found
+
+
+Source Filename:   /home/tapanito/university/rigsys/cw1/code/avp.ads
+Listing Filename:  /home/tapanito/university/rigsys/cw1/code/avp.lst
+
+   Unit name:  AVP
+   Unit type:  package specification
+   Unit has been analysed, any errors are listed below.
+
+No errors found
+
+
+Source Filename:   /home/tapanito/university/rigsys/cw1/code/avp.adb
+Listing Filename:  /home/tapanito/university/rigsys/cw1/code/avp.lst
+
+   Unit name:  AVP
+   Unit type:  package body
+   Unit has been analysed, any errors are listed below.
+
+No errors found
+
+Note: Automatic flow analysis mode selected
+
+
+--End of file--------------------------------------------------

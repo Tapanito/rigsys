@@ -1,0 +1,35 @@
+           *******************************************************
+                       Semantic Analysis of SPARK Text
+                              Examiner GPL 2012
+             Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+           *******************************************************
+
+
+                        DATE : 22-OCT-2015 13:17:49.53
+
+                      procedure Console.Inc_Alarm_Cnt
+
+
+
+
+For path(s) from start to run-time check associated with statement of line 25:
+
+procedure_inc_alarm_cnt_1.
+H1:    alarm_cnt >= integer__first .
+H2:    alarm_cnt <= integer__last .
+H3:    alarm_cnt < integer__last .
+        ->
+C1:    alarm_cnt + 1 >= integer__first .
+C2:    alarm_cnt + 1 <= integer__last .
+ 
+
+For path(s) from start to finish:
+
+procedure_inc_alarm_cnt_2.
+*** true .          /* trivially true VC removed by Examiner */
+
+
+procedure_inc_alarm_cnt_3.
+*** true .          /* trivially true VC removed by Examiner */
+
+

@@ -1,0 +1,33 @@
+           {*******************************************************}
+                               {FDL Declarations}
+                              {Examiner GPL 2012}
+             {Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.}
+           {*******************************************************}
+
+
+                        {DATE : 22-OCT-2015 13:17:49.81}
+
+                           {procedure AVP.Control}
+
+
+title procedure control;
+
+  function round__(real) : integer;
+  type sensors__state__type = pending;
+  type sensors__sensor_type = integer;
+  const sensors__sensor_type__base__first : integer = pending; 
+  const sensors__sensor_type__base__last : integer = pending; 
+  const integer__base__first : integer = pending; 
+  const integer__base__last : integer = pending; 
+  const sensors__sensor_type__first : integer = pending; 
+  const sensors__sensor_type__last : integer = pending; 
+  const sensors__sensor_type__size : integer = pending; 
+  const integer__first : integer = pending; 
+  const integer__last : integer = pending; 
+  const integer__size : integer = pending; 
+  var console__alarm_cnt : integer;
+  var sensors__state : sensors__state__type;
+  function sensors__read_sensor_majority(sensors__state__type) : 
+     integer;
+
+end;

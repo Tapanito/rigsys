@@ -1,0 +1,34 @@
+V "GNAT Lib v2015"
+P ZX
+
+RN
+RV NO_ELABORATION_CODE
+
+U sensors%b		sensors.adb		97186b8d OO PK
+
+U sensors%s		sensors.ads		ab4a3cdd EE NE OO PK
+
+D sensors.ads		20151020095515 ab4a3cdd sensors%s
+D sensors.adb		20151018224432 3c525750 sensors%b
+D system.ads		20150506105329 1d274481 system%s
+X 1 sensors.ads
+1K9*Sensors 21l5 21e12 2|1b14 58l5 58t12
+5N4*Init_Value 2|55r16 56r16 57r16
+6N4*Undef_Value 2|49r12
+8I12*Sensor_Type{integer} 11r58 15r68 18r41 2|6r14 7r14 8r14 10r58 20r68
+. 23r11 37r41 40r10
+9I12*Sensor_Index_Type{integer} 15r42 2|20r42
+11U14*Write_Sensors 11>28 11>37 11>46 2|10b14 18l8 18t21
+11i28 Value_1{8I12} 2|10b28 15r19
+11i37 Value_2{8I12} 2|10b37 16r19
+11i46 Value_3{8I12} 2|10b46 17r19
+15V13*Read_Sensor{8I12} 15>25 2|20b13 34l8 34t19
+15i25 Sensor_Index{9I12} 2|20b25 25r10 27r13
+18V13*Read_Sensor_Majority{8I12} 2|37b13 53l8 53t28
+X 2 sensors.adb
+6i4 Sensor_1{1|8I12} 15m7 26r15 42r7 43r12 44r10 45r12 55m4
+7i4 Sensor_2{1|8I12} 16m7 28r15 42r18 46r10 47r12 56m4
+8i4 Sensor_3{1|8I12} 17m7 30r15 44r21 46r21 57m4
+23i7 t{1|8I12} 26m10 28m10 30m10 33r14
+40i7 t{1|8I12} 43m7 45m7 47m7 49m7 52r11
+

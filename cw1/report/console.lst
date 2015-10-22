@@ -1,0 +1,84 @@
+           *******************************************************
+                            Listing of SPARK Text
+                              Examiner GPL 2012
+             Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+           *******************************************************
+
+
+                        DATE : 20-OCT-2015 10:25:22.37
+
+Line
+   1  package  body Console
+   2    
+   3  is
+   4     Reset_Status: Boolean:= False;
+   5     Alarm_Cnt: Integer:= 0;
+   6     
+   7     procedure Enable_Reset 
+   8     is
+   9     begin
+  10          Reset_Status := True;
+  11     end Enable_Reset;
+
++++        Flow analysis of subprogram Enable_Reset 
+           performed (information-flow mode): no errors found.
+
+  12  
+  13     procedure Disable_Reset 
+  14     is
+  15     begin
+  16          Reset_Status := False;
+  17     end Disable_Reset;
+
++++        Flow analysis of subprogram Disable_Reset 
+           performed (information-flow mode): no errors found.
+
+  18  
+  19     function Reset_Enabled return Boolean
+  20     is
+  21     begin
+  22          return Reset_Status;
+  23     end Reset_Enabled;
+
++++        Flow analysis of subprogram Reset_Enabled 
+           performed (information-flow mode): no errors found.
+
+  24     
+  25     procedure Inc_Alarm_Cnt
+  26     is
+  27     begin
+  28          Alarm_Cnt := Alarm_Cnt + 1;
+  29     end Inc_Alarm_Cnt;
+
++++        Flow analysis of subprogram Inc_Alarm_Cnt 
+           performed (information-flow mode): no errors found.
+
+  30     
+  31     procedure Reset_Alarm_Cnt
+  32     is
+  33     begin
+  34          Alarm_Cnt := 0;
+  35     end Reset_Alarm_Cnt;
+
++++        Flow analysis of subprogram Reset_Alarm_Cnt 
+           performed (information-flow mode): no errors found.
+
+  36        
+  37     function Alarm_Cnt_Value return Integer
+  38     is
+  39     begin
+  40          return Alarm_Cnt;
+  41     end Alarm_Cnt_Value;
+
++++        Flow analysis of subprogram Alarm_Cnt_Value 
+           performed (information-flow mode): no errors found.
+
+  42  
+  43  end Console;
+  44  
+  45  
+
+Note: Flow analysis mode is automatic
+
+
+--End of file--------------------------------------------------

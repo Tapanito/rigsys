@@ -1,0 +1,164 @@
+           *******************************************************
+                       Semantic Analysis of SPARK Text
+                              Examiner GPL 2012
+             Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+           *******************************************************
+
+
+                        DATE : 22-OCT-2015 13:17:49.63
+
+                   function Sensors.Read_Sensor_Majority
+
+
+
+
+For path(s) from start to run-time check associated with statement of line 44:
+
+function_read_sensor_majority_1.
+H1:    sensor_1 >= sensor_type__first .
+H2:    sensor_1 <= sensor_type__last .
+H3:    sensor_2 >= sensor_type__first .
+H4:    sensor_2 <= sensor_type__last .
+H5:    sensor_3 >= sensor_type__first .
+H6:    sensor_3 <= sensor_type__last .
+H7:    sensor_1 = sensor_2 .
+        ->
+C1:    sensor_1 >= sensor_type__first .
+C2:    sensor_1 <= sensor_type__last .
+ 
+
+For path(s) from start to run-time check associated with statement of line 46:
+
+function_read_sensor_majority_2.
+H1:    sensor_1 >= sensor_type__first .
+H2:    sensor_1 <= sensor_type__last .
+H3:    sensor_2 >= sensor_type__first .
+H4:    sensor_2 <= sensor_type__last .
+H5:    sensor_3 >= sensor_type__first .
+H6:    sensor_3 <= sensor_type__last .
+H7:    not (sensor_1 = sensor_2) .
+H8:    sensor_1 = sensor_3 .
+        ->
+C1:    sensor_1 >= sensor_type__first .
+C2:    sensor_1 <= sensor_type__last .
+ 
+
+For path(s) from start to run-time check associated with statement of line 48:
+
+function_read_sensor_majority_3.
+H1:    sensor_1 >= sensor_type__first .
+H2:    sensor_1 <= sensor_type__last .
+H3:    sensor_2 >= sensor_type__first .
+H4:    sensor_2 <= sensor_type__last .
+H5:    sensor_3 >= sensor_type__first .
+H6:    sensor_3 <= sensor_type__last .
+H7:    not (sensor_1 = sensor_2) .
+H8:    not (sensor_1 = sensor_3) .
+H9:    sensor_2 = sensor_3 .
+        ->
+C1:    sensor_2 >= sensor_type__first .
+C2:    sensor_2 <= sensor_type__last .
+ 
+
+For path(s) from start to run-time check associated with statement of line 50:
+
+function_read_sensor_majority_4.
+H1:    sensor_1 >= sensor_type__first .
+H2:    sensor_1 <= sensor_type__last .
+H3:    sensor_2 >= sensor_type__first .
+H4:    sensor_2 <= sensor_type__last .
+H5:    sensor_3 >= sensor_type__first .
+H6:    sensor_3 <= sensor_type__last .
+H7:    not (sensor_1 = sensor_2) .
+H8:    not (sensor_1 = sensor_3) .
+H9:    not (sensor_2 = sensor_3) .
+        ->
+C1:    undef_value >= sensor_type__first .
+C2:    undef_value <= sensor_type__last .
+ 
+
+For path(s) from start to finish:
+
+function_read_sensor_majority_5.
+H1:    sensor_1 >= sensor_type__first .
+H2:    sensor_1 <= sensor_type__last .
+H3:    sensor_2 >= sensor_type__first .
+H4:    sensor_2 <= sensor_type__last .
+H5:    sensor_3 >= sensor_type__first .
+H6:    sensor_3 <= sensor_type__last .
+H7:    sensor_1 = sensor_2 .
+H8:    sensor_1 >= sensor_type__first .
+H9:    sensor_1 <= sensor_type__last .
+H10:   sensor_1 >= sensor_type__first .
+H11:   sensor_1 <= sensor_type__last .
+        ->
+C1:    sensor_1 >= sensor_type__first .
+C2:    sensor_1 <= sensor_type__last .
+ 
+
+function_read_sensor_majority_6.
+H1:    sensor_1 >= sensor_type__first .
+H2:    sensor_1 <= sensor_type__last .
+H3:    sensor_2 >= sensor_type__first .
+H4:    sensor_2 <= sensor_type__last .
+H5:    sensor_3 >= sensor_type__first .
+H6:    sensor_3 <= sensor_type__last .
+H7:    not (sensor_1 = sensor_2) .
+H8:    sensor_1 = sensor_3 .
+H9:    sensor_1 >= sensor_type__first .
+H10:   sensor_1 <= sensor_type__last .
+H11:   sensor_1 >= sensor_type__first .
+H12:   sensor_1 <= sensor_type__last .
+        ->
+C1:    sensor_1 >= sensor_type__first .
+C2:    sensor_1 <= sensor_type__last .
+ 
+
+function_read_sensor_majority_7.
+H1:    sensor_1 >= sensor_type__first .
+H2:    sensor_1 <= sensor_type__last .
+H3:    sensor_2 >= sensor_type__first .
+H4:    sensor_2 <= sensor_type__last .
+H5:    sensor_3 >= sensor_type__first .
+H6:    sensor_3 <= sensor_type__last .
+H7:    not (sensor_1 = sensor_2) .
+H8:    not (sensor_1 = sensor_3) .
+H9:    sensor_2 = sensor_3 .
+H10:   sensor_2 >= sensor_type__first .
+H11:   sensor_2 <= sensor_type__last .
+H12:   sensor_2 >= sensor_type__first .
+H13:   sensor_2 <= sensor_type__last .
+        ->
+C1:    sensor_2 >= sensor_type__first .
+C2:    sensor_2 <= sensor_type__last .
+ 
+
+function_read_sensor_majority_8.
+H1:    sensor_1 >= sensor_type__first .
+H2:    sensor_1 <= sensor_type__last .
+H3:    sensor_2 >= sensor_type__first .
+H4:    sensor_2 <= sensor_type__last .
+H5:    sensor_3 >= sensor_type__first .
+H6:    sensor_3 <= sensor_type__last .
+H7:    not (sensor_1 = sensor_2) .
+H8:    not (sensor_1 = sensor_3) .
+H9:    not (sensor_2 = sensor_3) .
+H10:   undef_value >= sensor_type__first .
+H11:   undef_value <= sensor_type__last .
+H12:   undef_value >= sensor_type__first .
+H13:   undef_value <= sensor_type__last .
+        ->
+C1:    undef_value >= sensor_type__first .
+C2:    undef_value <= sensor_type__last .
+ 
+
+For checks of refinement integrity: 
+
+function_read_sensor_majority_9.
+*** true .          /* trivially true VC removed by Examiner */
+
+
+function_read_sensor_majority_10.
+*** true .          /* trivially true VC removed by Examiner */
+
+

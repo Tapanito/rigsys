@@ -1,0 +1,104 @@
+           *******************************************************
+                       Semantic Analysis of SPARK Text
+                              Examiner GPL 2012
+             Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+           *******************************************************
+
+
+                        DATE : 22-OCT-2015 13:17:49.81
+
+                           procedure AVP.Control
+
+
+
+
+For path(s) from start to run-time check associated with statement of line 8:
+
+procedure_control_1.
+H1:    console__alarm_cnt >= integer__first .
+H2:    console__alarm_cnt <= integer__last .
+H3:    sensors__read_sensor_majority(sensors__state) >= 
+           sensors__sensor_type__first .
+H4:    sensors__read_sensor_majority(sensors__state) <= 
+           sensors__sensor_type__last .
+        ->
+C1:    sensors__read_sensor_majority(sensors__state) >= 
+           sensors__sensor_type__first .
+C2:    sensors__read_sensor_majority(sensors__state) <= 
+           sensors__sensor_type__last .
+ 
+
+For path(s) from start to finish:
+
+procedure_control_2.
+*** true .          /* trivially true VC removed by Examiner */
+
+
+procedure_control_3.
+*** true .          /* trivially true VC removed by Examiner */
+
+
+procedure_control_4.
+*** true .          /* trivially true VC removed by Examiner */
+
+
+procedure_control_5.
+*** true .          /* trivially true VC removed by Examiner */
+
+
+procedure_control_6.
+*** true .          /* trivially true VC removed by Examiner */
+
+
+procedure_control_7.
+*** true .          /* trivially true VC removed by Examiner */
+
+
+procedure_control_8.
+*** true .          /* trivially true VC removed by Examiner */
+
+
+procedure_control_9.
+*** true .          /* trivially true VC removed by Examiner */
+
+
+procedure_control_10.
+*** true .          /* trivially true VC removed by Examiner */
+
+
+procedure_control_11.
+*** true .          /* trivially true VC removed by Examiner */
+
+
+procedure_control_12.
+*** true .          /* trivially true VC removed by Examiner */
+
+
+procedure_control_13.
+*** true .          /* trivially true VC removed by Examiner */
+
+
+procedure_control_14.
+*** true .          /* trivially true VC removed by Examiner */
+
+
+procedure_control_15.
+*** true .          /* trivially true VC removed by Examiner */
+
+
+procedure_control_16.
+*** true .          /* trivially true VC removed by Examiner */
+
+
+procedure_control_17.
+*** true .          /* trivially true VC removed by Examiner */
+
+
+procedure_control_18.
+*** true .          /* trivially true VC removed by Examiner */
+
+
+procedure_control_19.
+*** true .          /* trivially true VC removed by Examiner */
+
+

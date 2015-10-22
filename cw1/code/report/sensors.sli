@@ -1,0 +1,44 @@
+V "SPARK 2012"
+A -noswitch
+A -noindex_file
+A -nowarning_file
+A -notarget_compiler_data
+A -config_file=gnat.cfg
+A -source_extension=ada
+A -listing_extension=lst
+A -nodictionary_file
+A -report_file=spark.rep
+A -nohtml
+A -vcg
+A -nostatistics
+A -fdl_identifiers=accept
+A -flow_analysis=auto
+A -language=95
+A -profile=sequential
+A -annotation_character=#
+A -rules=lazy
+A -error_explanations=off
+A -justification_option=full
+A -output_directory=report
+A -output_directory (actual)=/home/tapanito/university/rigsys/cw1/code/report/
+P
+R
+
+U Sensors%b sensors.adb
+U Sensors%s sensors.ads
+
+D sensors.ads 00000000000000 00000000
+D sensors.adb 00000000000000 00000000
+
+X 1 sensors.ads
+2H12 State 13m16 3r20 12r19 16r18 19r18 2|2c12
+11U14 Write_Sensors 12<19 2|11<19 11<29 11<39
+11i28 Value_1 13r27 2|12r30
+11i37 Value_2 13r36 2|12r54
+11i46 Value_3 13r45 2|12r78
+15V13 Read_Sensor 16>18 2|21>18 21>28 21>38
+18V13 Read_Sensor_Majority 19>18 2|39>18 39>28 39>38
+X 2 sensors.adb
+6i4 Sensor_1 12m16 2o21 11r19 21r18 39r18
+7i4 Sensor_2 12m40 2o31 11r29 21r28 39r28
+8i4 Sensor_3 12m64 2o41 11r39 21r38 39r38

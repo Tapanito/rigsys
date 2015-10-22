@@ -1,0 +1,24 @@
+           *******************************************************
+                       Semantic Analysis of SPARK Text
+                              Examiner GPL 2012
+             Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+           *******************************************************
+
+
+                        DATE : 22-OCT-2015 13:17:49.58
+
+                      function Console.Alarm_Cnt_Value
+
+
+
+
+For path(s) from start to finish:
+
+function_alarm_cnt_value_1.
+H1:    alarm_cnt >= integer__first .
+H2:    alarm_cnt <= integer__last .
+        ->
+C1:    alarm_cnt >= integer__first .
+C2:    alarm_cnt <= integer__last .
+ 
+

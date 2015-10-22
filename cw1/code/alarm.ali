@@ -1,0 +1,26 @@
+V "GNAT Lib v2015"
+P ZX
+
+RN
+RV NO_ELABORATION_CODE
+
+U alarm%b		alarm.adb		961e8316 OO PK
+W console%s		console.adb		console.ali
+
+U alarm%s		alarm.ads		3c138346 EE NE OO PK
+
+D alarm.ads		20151021092734 3c138346 alarm%s
+D alarm.adb		20151021091609 ad630c30 alarm%b
+D console.ads		20151021091339 076e0c60 console%s
+D system.ads		20150506105329 1d274481 system%s
+X 1 alarm.ads
+2K9*Alarm 19l5 19e10 2|2b14 28l5 28t10
+6U14*Enable 2|5b15 10l9 10t15
+12U14*Disable 2|12b15 16l9 16t16
+16V13*Enabled{boolean} 2|19b14 23l9 23t16
+X 2 alarm.adb
+4b5 State{boolean} 9m9 15m9 22r16 27m5
+X 3 console.ads
+1K10*Console 2|1w6 8r9 3|30e12
+19U14*Inc_Alarm_Cnt 2|8s17
+

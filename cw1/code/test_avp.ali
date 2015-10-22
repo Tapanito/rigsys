@@ -1,0 +1,29 @@
+V "GNAT Lib v2015"
+M P W=b
+P ZX
+
+RN
+
+U test_avp%b		test_avp.adb		1927c4f3 NE OO SU
+W avp%s			avp.adb			avp.ali
+W handler%s		handler.adb		handler.ali
+
+D avp.ads		20151021092822 151e33d5 avp%s
+D handler.ads		20150920090723 762dec1c handler%s
+D system.ads		20150506105329 1d274481 system%s
+D test_avp.adb		20151002082049 7a141b3a test_avp%b
+X 1 avp.ads
+2K9*AVP 10e8 4|18w15 27r7
+5U14*Control 4|27s11
+X 2 handler.ads
+18K9*Handler 38e12 4|18w6 21r4 22r4 24r17 25r7 26r7 28r7 30r4 31r4
+24U13*Update_Env 4|25s15
+26V12*At_End{boolean} 4|24s25
+28U13*Open_Env_File 4|21s12
+30U13*Close_Env_File 4|30s12
+32U13*Update_Log 4|26s15 28s15
+34U13*Open_Log_File 4|22s12
+36U13*Close_Log_File 4|31s12
+X 4 test_avp.adb
+19U11*Test_AVP 19b11 32l5 32t13
+

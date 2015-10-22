@@ -1,0 +1,20 @@
+           *******************************************************
+                       Semantic Analysis of SPARK Text
+                              Examiner GPL 2012
+             Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+           *******************************************************
+
+
+                        DATE : 22-OCT-2015 13:17:49.49
+
+                       procedure Console.Enable_Reset
+
+
+
+
+For path(s) from start to finish:
+
+procedure_enable_reset_1.
+*** true .          /* trivially true VC removed by Examiner */
+
+

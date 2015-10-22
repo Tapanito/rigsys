@@ -1,0 +1,78 @@
+           *******************************************************
+                       Semantic Analysis of SPARK Text
+                              Examiner GPL 2012
+             Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+           *******************************************************
+
+
+                        DATE : 22-OCT-2015 13:17:49.62
+
+                      procedure Sensors.Write_Sensors
+
+
+
+
+For path(s) from start to run-time check associated with statement of line 15:
+
+procedure_write_sensors_1.
+H1:    value_1 >= sensor_type__first .
+H2:    value_1 <= sensor_type__last .
+H3:    value_2 >= sensor_type__first .
+H4:    value_2 <= sensor_type__last .
+H5:    value_3 >= sensor_type__first .
+H6:    value_3 <= sensor_type__last .
+        ->
+C1:    value_1 >= sensor_type__first .
+C2:    value_1 <= sensor_type__last .
+ 
+
+For path(s) from start to run-time check associated with statement of line 16:
+
+procedure_write_sensors_2.
+H1:    value_1 >= sensor_type__first .
+H2:    value_1 <= sensor_type__last .
+H3:    value_2 >= sensor_type__first .
+H4:    value_2 <= sensor_type__last .
+H5:    value_3 >= sensor_type__first .
+H6:    value_3 <= sensor_type__last .
+H7:    value_1 >= sensor_type__first .
+H8:    value_1 <= sensor_type__last .
+        ->
+C1:    value_2 >= sensor_type__first .
+C2:    value_2 <= sensor_type__last .
+ 
+
+For path(s) from start to run-time check associated with statement of line 17:
+
+procedure_write_sensors_3.
+H1:    value_1 >= sensor_type__first .
+H2:    value_1 <= sensor_type__last .
+H3:    value_2 >= sensor_type__first .
+H4:    value_2 <= sensor_type__last .
+H5:    value_3 >= sensor_type__first .
+H6:    value_3 <= sensor_type__last .
+H7:    value_1 >= sensor_type__first .
+H8:    value_1 <= sensor_type__last .
+H9:    value_2 >= sensor_type__first .
+H10:   value_2 <= sensor_type__last .
+        ->
+C1:    value_3 >= sensor_type__first .
+C2:    value_3 <= sensor_type__last .
+ 
+
+For path(s) from start to finish:
+
+procedure_write_sensors_4.
+*** true .          /* trivially true VC removed by Examiner */
+
+
+For checks of refinement integrity: 
+
+procedure_write_sensors_5.
+*** true .          /* trivially true VC removed by Examiner */
+
+
+procedure_write_sensors_6.
+*** true .          /* trivially true VC removed by Examiner */
+
+

@@ -1,0 +1,21 @@
+V "GNAT Lib v2015"
+P ZX
+
+RN
+RV NO_ELABORATION_CODE
+
+U escapevalve%b		escapevalve.adb		686f37f9 OO PK
+
+U escapevalve%s		escapevalve.ads		6257756b EE NE OO PK
+
+D escapevalve.ads	20151020095613 6257756b escapevalve%s
+D escapevalve.adb	20151018220316 0a384292 escapevalve%b
+D system.ads		20150506105329 1d274481 system%s
+X 1 escapevalve.ads
+1K9*EscapeValve 16l5 16e16 2|1b14 31l5 31t16
+5U14*Activate 2|6b14 12l8 12t16
+9U14*Deactivate 2|14b14 20l8 20t18
+13V13*Activated{boolean} 2|22b13 27l8 27t17
+X 2 escapevalve.adb
+4b4 Valve_State{boolean} 11m7 19m7 26r14 30m4
+

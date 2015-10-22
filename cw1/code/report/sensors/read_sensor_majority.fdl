@@ -1,0 +1,32 @@
+           {*******************************************************}
+                               {FDL Declarations}
+                              {Examiner GPL 2012}
+             {Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.}
+           {*******************************************************}
+
+
+                        {DATE : 22-OCT-2015 13:17:49.63}
+
+                   {function Sensors.Read_Sensor_Majority}
+
+
+title function read_sensor_majority;
+
+  function round__(real) : integer;
+  type sensor_type = integer;
+  const undef_value : integer = pending;
+  const sensor_type__base__first : integer = pending; 
+  const sensor_type__base__last : integer = pending; 
+  const integer__base__first : integer = pending; 
+  const integer__base__last : integer = pending; 
+  const sensor_type__first : integer = pending; 
+  const sensor_type__last : integer = pending; 
+  const sensor_type__size : integer = pending; 
+  const integer__first : integer = pending; 
+  const integer__last : integer = pending; 
+  const integer__size : integer = pending; 
+  var sensor_1 : integer;
+  var sensor_2 : integer;
+  var sensor_3 : integer;
+
+end;

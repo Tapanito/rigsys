@@ -1,0 +1,64 @@
+           *******************************************************
+                            Listing of SPARK Text
+                              Examiner GPL 2012
+             Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+           *******************************************************
+
+
+                        DATE : 20-OCT-2015 10:25:22.39
+
+Line
+   1  package body EscapeValve
+   2     --# own State is Valve_State;
+   3  is
+   4     Valve_State: Boolean;
+   5  
+   6     procedure Activate
+   7     --# global out Valve_State;
+   8     --# derives Valve_State from ;
+   9     is
+  10     begin
+  11        Valve_State := True;
+  12     end Activate;
+
++++        Flow analysis of subprogram Activate performed 
+           (information-flow mode): no errors found.
+
+  13  
+  14     procedure Deactivate
+  15     --# global out Valve_State;
+  16     --# derives Valve_State from ;
+  17     is
+  18     begin
+  19        Valve_State := False;
+  20     end Deactivate;
+
++++        Flow analysis of subprogram Deactivate performed 
+           (information-flow mode): no errors found.
+
+  21  
+  22     function Activated return Boolean
+  23     --# global in Valve_State;
+  24     is
+  25     begin
+  26        return Valve_State;
+  27     end Activated;
+
++++        Flow analysis of subprogram Activated performed 
+           (information-flow mode): no errors found.
+
+  28  
+  29  begin
+  30     Valve_State := False;
+  31  end EscapeValve;
+
++++        Flow analysis of package initialization 
+           performed: no errors found.
+
+  32  
+  33  
+
+Note: Flow analysis mode is automatic
+
+
+--End of file--------------------------------------------------

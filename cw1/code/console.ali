@@ -1,0 +1,24 @@
+V "GNAT Lib v2015"
+P ZX
+
+RN
+RV NO_ELABORATION_CODE
+
+U console%b		console.adb		60db4907 OO PK
+
+U console%s		console.ads		076e0c60 BD EE NE OO PK
+
+D console.ads		20151021091339 076e0c60 console%s
+D console.adb		20151021093409 67b54567 console%b
+D system.ads		20150506105329 1d274481 system%s
+X 1 console.ads
+1K10*Console 30l5 30e12 2|1b15 44l5 44t12
+5b5*Reset_Status{boolean} 2|5m9 11m9 17r16 42m5
+6i5*Alarm_Cnt{integer} 2|24r10 25m9 25r22 32m9 38r16 43m5
+8U14*Enable_Reset 2|2b14 6l8 6t20
+12U14*Disable_Reset 2|8b14 12l8 12t21
+16V13*Reset_Enabled{boolean} 2|14b13 18l8 18t21
+19U14*Inc_Alarm_Cnt 2|20b14 27l8 27t21
+23U14*Reset_Alarm_Cnt 2|29b14 33l8 33t23
+27V13*Alarm_Cnt_Value{integer} 2|35b13 39l8 39t23
+

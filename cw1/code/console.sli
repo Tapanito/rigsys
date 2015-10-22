@@ -1,0 +1,40 @@
+V "SPARK 2012"
+A -noswitch
+A -noindex_file
+A -nowarning_file
+A -notarget_compiler_data
+A -noconfig_file
+A -source_extension=ada
+A -listing_extension=lst
+A -nodictionary_file
+A -report_file=spark.rep
+A -nohtml
+A -nostatistics
+A -fdl_identifiers=accept
+A -flow_analysis=auto
+A -language=95
+A -profile=sequential
+A -annotation_character=#
+A -rules=lazy
+A -error_explanations=off
+A -justification_option=full
+A -output_directory=.
+A -output_directory (actual)=/home/tapanito/university/rigsys/cw1/code/
+P
+R
+
+U Console%b console.adb
+U Console%s console.ads
+
+D console.ads 00000000000000 00000000
+D console.adb 00000000000000 00000000
+
+X 1 console.ads
+2H11 Reset_Status 10m19 14m18 3r19 9r22 13r21 17r20 2|4O4
+2H25 Alarm_Cnt 21m18 24m19 3r33 20r24 21r33 23r22 27r18 2|5O4
+8U14 Enable_Reset 9<22
+12U14 Disable_Reset 13<21
+16V13 Reset_Enabled 17>20
+19U14 Inc_Alarm_Cnt 20=24
+22U14 Reset_Alarm_Cnt 23<22
+26V13 Alarm_Cnt_Value 27>18

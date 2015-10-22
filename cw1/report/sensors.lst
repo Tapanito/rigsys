@@ -1,0 +1,89 @@
+           *******************************************************
+                            Listing of SPARK Text
+                              Examiner GPL 2012
+             Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+           *******************************************************
+
+
+                        DATE : 20-OCT-2015 10:25:22.36
+
+Line
+   1  package body Sensors
+   2     --# own State is Sensor_1, Sensor_2, Sensor_3;
+   3  is
+   4  
+   5     -- initializing at 0 might be bad
+   6     Sensor_1: Sensor_Type;
+   7     Sensor_2: Sensor_Type;
+   8     Sensor_3: Sensor_Type;
+   9  
+  10     procedure Write_Sensors(Value_1, Value_2, Value_3: in Sensor_Type) 
+  11     --# global out Sensor_1, Sensor_2, Sensor_3;
+  12     --# derives Sensor_1 from Value_1 & Sensor_2 from Value_2 & Sensor_3 from Value_3;
+  13     is
+  14     begin
+  15        Sensor_1 := Value_1;
+  16        Sensor_2 := Value_2;
+  17        Sensor_3 := Value_3;
+  18     end Write_Sensors;
+
++++        Flow analysis of subprogram Write_Sensors 
+           performed (information-flow mode): no errors found.
+
+  19  
+  20     function Read_Sensor(Sensor_Index: in Sensor_Index_Type) return Sensor_Type
+  21     --# global in Sensor_1, Sensor_2, Sensor_3;
+  22     is
+  23        t : Sensor_Type;
+  24     begin 
+  25        if Sensor_Index = 1 then
+  26           t := Sensor_1;
+  27        elsif Sensor_Index = 2 then
+  28           t := Sensor_2;
+  29        else
+  30           t := Sensor_3;
+  31        end if;
+  32  
+  33        return t;
+  34     end Read_Sensor;
+
++++        Flow analysis of subprogram Read_Sensor 
+           performed (information-flow mode): no errors found.
+
+  35  
+  36  
+  37     function Read_Sensor_Majority return Sensor_Type 
+  38     --# global in Sensor_1, Sensor_2, Sensor_3;
+  39     is
+  40        t: Sensor_Type;
+  41     begin
+  42     if Sensor_1 = Sensor_2 then
+  43        t := Sensor_1;
+  44     elsif Sensor_1 = Sensor_3 then
+  45        t := Sensor_1;
+  46     elsif Sensor_2 = Sensor_3 then
+  47        t := Sensor_2;
+  48     else
+  49        t := Undef_Value;
+  50     end if;
+  51  
+  52     return t;
+  53     end Read_Sensor_Majority;
+
++++        Flow analysis of subprogram Read_Sensor_Majority 
+           performed (information-flow mode): no errors found.
+
+  54  begin
+  55     Sensor_1 := Init_Value;
+  56     Sensor_2 := Init_Value;
+  57     Sensor_3 := Init_Value;   
+  58  end Sensors;
+
++++        Flow analysis of package initialization 
+           performed: no errors found.
+
+
+Note: Flow analysis mode is automatic
+
+
+--End of file--------------------------------------------------

@@ -1,0 +1,39 @@
+V "SPARK 2012"
+A -noswitch
+A -noindex_file
+A -nowarning_file
+A -notarget_compiler_data
+A -config_file=gnat.cfg
+A -source_extension=ada
+A -listing_extension=lst
+A -nodictionary_file
+A -report_file=spark.rep
+A -nohtml
+A -vcg
+A -nostatistics
+A -fdl_identifiers=accept
+A -flow_analysis=auto
+A -language=95
+A -profile=sequential
+A -annotation_character=#
+A -rules=lazy
+A -error_explanations=off
+A -justification_option=full
+A -output_directory=report
+A -output_directory (actual)=/home/tapanito/university/rigsys/cw1/code/report/
+P
+R
+
+U EscapeValve%b escapevalve.adb
+U EscapeValve%s escapevalve.ads
+
+D escapevalve.ads 00000000000000 00000000
+D escapevalve.adb 00000000000000 00000000
+
+X 1 escapevalve.ads
+2H12 State 7m16 11m16 3r20 6r19 10r19 14r18 2|2c12
+5U14 Activate 6<19 2|7<19
+9U14 Deactivate 10<19 2|15<19
+13V13 Activated 14>18 2|23>18
+X 2 escapevalve.adb
+4e4 Valve_State 8m16 16m16 2o21 7r19 15r19 23r18

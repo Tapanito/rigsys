@@ -1,0 +1,74 @@
+V "SPARK 2012"
+A -noswitch
+A -noindex_file
+A -nowarning_file
+A -notarget_compiler_data
+A -config_file=gnat.cfg
+A -source_extension=ada
+A -listing_extension=lst
+A -nodictionary_file
+A -report_file=spark.rep
+A -nohtml
+A -vcg
+A -nostatistics
+A -fdl_identifiers=accept
+A -flow_analysis=auto
+A -language=95
+A -profile=sequential
+A -annotation_character=#
+A -rules=lazy
+A -error_explanations=off
+A -justification_option=full
+A -output_directory=report
+A -output_directory (actual)=/home/tapanito/university/rigsys/cw1/code/report/
+P
+R
+
+U AVP%b avp.adb
+U AVP%s avp.ads
+W Console%s console.adb console.sli
+W Sensors%s sensors.adb sensors.sli
+W Alarm%s alarm.adb alarm.sli
+W EscapeValve%s escapevalve.adb escapevalve.sli
+
+D console.ads 00000000000000 00000000
+D sensors.ads 00000000000000 00000000
+D alarm.ads 00000000000000 00000000
+D escapevalve.ads 00000000000000 00000000
+D avp.ads 00000000000000 00000000
+D avp.adb 00000000000000 00000000
+
+X 1 console.ads
+1K10 Console 3|9m29 7r22 9r52 1w13 5|6r33 7r54 1w22
+5H5 Reset_Status 10m19 14m18 2o11 3r19 9r22 13r21 17r20 5|6r41
+6H5 Alarm_Cnt 21m18 25m19 2o25 3r33 20r24 21r33 24r22 28r18 3|9m37
+. 7r30 9r60 5|7r62
+8U14 Enable_Reset 9<22
+12U14 Disable_Reset 13<21
+16V13 Reset_Enabled 17>20
+19U14 Inc_Alarm_Cnt 20=24
+23U14 Reset_Alarm_Cnt 24<22
+27V13 Alarm_Cnt_Value 28>18
+X 2 sensors.ads
+1K9 Sensors 5|6r18 1w13
+2H12 State 13m16 3r20 12r19 16r18 19r18 5|6r26
+11U14 Write_Sensors 12<19
+11i28 Value_1 13r27
+11i37 Value_2 13r36
+11i46 Value_3 13r45
+15V13 Read_Sensor 16>18
+18V13 Read_Sensor_Majority 19>18
+X 3 alarm.ads
+2K9 Alarm 5|7r22 1w31
+3H12 State 9m16 14m16 4r20 8r13 13r19 17r18 5|7r28
+6U14 Enable 8<13 7=30
+12U14 Disable 13<19
+16V13 Enabled 17>18
+X 4 escapevalve.ads
+1K9 EscapeValve 5|7r35 1w38
+2H12 State 7m16 11m16 3r20 6r19 10r19 14r18 5|7r47
+5U14 Activate 6<19
+9U14 Deactivate 10<19
+13V13 Activated 14>18
+X 5 avp.ads
+5U14 Control 7=28 7=47 7=62 6>26 6>41
