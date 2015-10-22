@@ -20,7 +20,7 @@ A -rules=lazy
 A -error_explanations=off
 A -justification_option=full
 A -output_directory=report
-A -output_directory (actual)=/home/tapanito/university/rigsys/cw1/code/report/
+A -output_directory (actual)=/home/cs4/vt50/workspace/rigsys/cw1/code/report/
 P
 R
 

@@ -36,16 +36,16 @@ Summary Dead Path files (.sdp)
         'L' - Live path
 
 in the directory:
-/home/tapanito/university/rigsys/cw1/code/report/alarm
+/home/cs4/vt50/workspace/rigsys/cw1/code/report/alarm
 
-Summary produced: 21-OCT-2015 10:59:54.50
+Summary produced: 22-OCT-2015 13:36:45.53
 
-File /home/tapanito/university/rigsys/cw1/code/report/alarm/disable.vcg
+File /home/cs4/vt50/workspace/rigsys/cw1/code/report/alarm/disable.vcg
 procedure Alarm.Disable
 
-VCs generated 21-OCT-2015 10:51:46
+VCs generated 22-OCT-2015 13:33:18
 
-VCs not simplified
+VCs simplified 22-OCT-2015 13:33:28
 
 VCs for procedure_disable :
  -----------------------------------------------------------------------------
@@ -55,12 +55,12 @@ VCs for procedure_disable :
  -----------------------------------------------------------------------------
 
 
-File /home/tapanito/university/rigsys/cw1/code/report/alarm/enable.vcg
+File /home/cs4/vt50/workspace/rigsys/cw1/code/report/alarm/enable.vcg
 procedure Alarm.Enable
 
-VCs generated 21-OCT-2015 10:51:46
+VCs generated 22-OCT-2015 13:33:18
 
-VCs not simplified
+VCs simplified 22-OCT-2015 13:33:28
 
 VCs for procedure_enable :
  -----------------------------------------------------------------------------
@@ -70,12 +70,12 @@ VCs for procedure_enable :
  -----------------------------------------------------------------------------
 
 
-File /home/tapanito/university/rigsys/cw1/code/report/alarm/enabled.vcg
+File /home/cs4/vt50/workspace/rigsys/cw1/code/report/alarm/enabled.vcg
 function Alarm.Enabled
 
-VCs generated 21-OCT-2015 10:51:46
+VCs generated 22-OCT-2015 13:33:18
 
-VCs not simplified
+VCs simplified 22-OCT-2015 13:33:28
 
 VCs for function_enabled :
  -----------------------------------------------------------------------------

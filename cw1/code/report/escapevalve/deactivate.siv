@@ -1,0 +1,33 @@
+*****************************************************************************
+                       Semantic Analysis of SPARK Text
+                              Examiner GPL 2012
+             Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+*****************************************************************************
+
+
+CREATED 22-OCT-2015, 13:33:18  SIMPLIFIED 22-OCT-2015, 13:33:28
+
+SPARK Simplifier GPL 2012
+Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+
+procedure EscapeValve.Deactivate
+
+
+
+
+For path(s) from start to finish:
+
+procedure_deactivate_1.
+*** true .          /* all conclusions proved */
+
+
+For checks of refinement integrity: 
+
+procedure_deactivate_2.
+*** true .          /* all conclusions proved */
+
+
+procedure_deactivate_3.
+*** true .          /* all conclusions proved */
+
+

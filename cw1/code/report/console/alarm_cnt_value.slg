@@ -1,0 +1,26 @@
+*****************************************************************************
+                       Semantic Analysis of SPARK Text
+                              Examiner GPL 2012
+             Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+*****************************************************************************
+
+
+CREATED 22-OCT-2015, 13:33:18  SIMPLIFIED 22-OCT-2015, 13:33:28
+
+SPARK Simplifier GPL 2012
+Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+
+function Console.Alarm_Cnt_Value
+
+
+
+
+
+
+@@@@@@@@@@  VC: function_alarm_cnt_value_1.  @@@@@@@@@@
+***  Proved C1:  alarm_cnt >= integer__first
+     using hypothesis H1.
+***  Proved C2:  alarm_cnt <= integer__last
+     using hypothesis H2.
+***  PROVED VC.
+

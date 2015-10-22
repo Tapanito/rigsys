@@ -1,0 +1,33 @@
+*****************************************************************************
+                       Semantic Analysis of SPARK Text
+                              Examiner GPL 2012
+             Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+*****************************************************************************
+
+
+CREATED 22-OCT-2015, 13:33:18  SIMPLIFIED 22-OCT-2015, 13:33:28
+
+SPARK Simplifier GPL 2012
+Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+
+procedure Console.Inc_Alarm_Cnt
+
+
+
+
+For path(s) from start to run-time check associated with statement of line 25:
+
+procedure_inc_alarm_cnt_1.
+*** true .          /* all conclusions proved */
+
+
+For path(s) from start to finish:
+
+procedure_inc_alarm_cnt_2.
+*** true .          /* all conclusions proved */
+
+
+procedure_inc_alarm_cnt_3.
+*** true .          /* all conclusions proved */
+
+

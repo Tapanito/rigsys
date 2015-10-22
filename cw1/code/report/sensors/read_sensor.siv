@@ -1,0 +1,63 @@
+*****************************************************************************
+                       Semantic Analysis of SPARK Text
+                              Examiner GPL 2012
+             Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+*****************************************************************************
+
+
+CREATED 22-OCT-2015, 13:33:18  SIMPLIFIED 22-OCT-2015, 13:33:28
+
+SPARK Simplifier GPL 2012
+Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+
+function Sensors.Read_Sensor
+
+
+
+
+For path(s) from start to run-time check associated with statement of line 27:
+
+function_read_sensor_1.
+*** true .          /* all conclusions proved */
+
+
+For path(s) from start to run-time check associated with statement of line 29:
+
+function_read_sensor_2.
+*** true .          /* all conclusions proved */
+
+
+For path(s) from start to run-time check associated with statement of line 31:
+
+function_read_sensor_3.
+*** true .          /* all conclusions proved */
+
+
+For path(s) from start to finish:
+
+function_read_sensor_4.
+*** true .          /* all conclusions proved */
+
+
+function_read_sensor_5.
+*** true .          /* all conclusions proved */
+
+
+function_read_sensor_6.
+*** true .          /* all conclusions proved */
+
+
+function_read_sensor_7.
+*** true .          /* all conclusions proved */
+
+
+For checks of refinement integrity: 
+
+function_read_sensor_8.
+*** true .          /* all conclusions proved */
+
+
+function_read_sensor_9.
+*** true .          /* all conclusions proved */
+
+

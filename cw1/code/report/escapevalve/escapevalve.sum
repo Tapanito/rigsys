@@ -1,0 +1,152 @@
+-------------------------------------------------------------------------------
+                          Semantic Analysis Summary                            
+                                POGS GPL 2012                                  
+            Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.               
+-------------------------------------------------------------------------------
+
+Summary of:
+
+Verification Condition files (.vcg)
+Simplified Verification Condition files (.siv)
+Victor result files (.vct)
+Riposte result files (.rsm)
+Proof Logs (.plg)
+Dead Path Conjecture files (.dpc)
+Summary Dead Path files (.sdp)
+
+"status" column keys:
+    1st character:
+        '-' - No VC
+        'S' - No SIV
+        'U' - Undischarged
+        'E' - Proved by Examiner
+        'I' - Proved by Simplifier by Inference
+        'X' - Proved by Simplifier by Contradiction
+        'P' - Proved by Simplifier using User Defined Proof Rules
+        'V' - Proved by Victor
+        'O' - Proved by Riposte
+        'C' - Proved by Checker
+        'R' - Proved by Review
+        'F' - VC is False
+    2nd character:
+        '-' - No DPC
+        'S' - No SDP
+        'U' - Unchecked
+        'D' - Dead path
+        'L' - Live path
+
+in the directory:
+/home/cs4/vt50/workspace/rigsys/cw1/code/report/escapevalve
+
+Summary produced: 22-OCT-2015 13:37:09.28
+
+File /home/cs4/vt50/workspace/rigsys/cw1/code/report/escapevalve/activate.vcg
+procedure EscapeValve.Activate
+
+VCs generated 22-OCT-2015 13:33:18
+
+VCs simplified 22-OCT-2015 13:33:27
+
+VCs for procedure_activate :
+ -----------------------------------------------------------------------------
+| #   | From  | To                  | Proved By          | Dead Path | Status |
+|-----------------------------------------------------------------------------
+| 1   | start |    assert @ finish  | Examiner           | No DPC    |   E-   |
+| 2   |       | refinement          | Examiner           | No DPC    |   E-   |
+| 3   |       | refinement          | Examiner           | No DPC    |   E-   |
+ -----------------------------------------------------------------------------
+
+
+File /home/cs4/vt50/workspace/rigsys/cw1/code/report/escapevalve/activated.vcg
+function EscapeValve.Activated
+
+VCs generated 22-OCT-2015 13:33:18
+
+VCs simplified 22-OCT-2015 13:33:27
+
+VCs for function_activated :
+ -----------------------------------------------------------------------------
+| #   | From  | To                  | Proved By          | Dead Path | Status |
+|-----------------------------------------------------------------------------
+| 1   | start |    assert @ finish  | Examiner           | No DPC    |   E-   |
+| 2   |       | refinement          | Examiner           | No DPC    |   E-   |
+| 3   |       | refinement          | Examiner           | No DPC    |   E-   |
+ -----------------------------------------------------------------------------
+
+
+File /home/cs4/vt50/workspace/rigsys/cw1/code/report/escapevalve/deactivate.vcg
+procedure EscapeValve.Deactivate
+
+VCs generated 22-OCT-2015 13:33:18
+
+VCs simplified 22-OCT-2015 13:33:28
+
+VCs for procedure_deactivate :
+ -----------------------------------------------------------------------------
+| #   | From  | To                  | Proved By          | Dead Path | Status |
+|-----------------------------------------------------------------------------
+| 1   | start |    assert @ finish  | Examiner           | No DPC    |   E-   |
+| 2   |       | refinement          | Examiner           | No DPC    |   E-   |
+| 3   |       | refinement          | Examiner           | No DPC    |   E-   |
+ -----------------------------------------------------------------------------
+
+
+===============================================================================
+Summary:
+
+Proof strategies used by subprograms
+-------------------------------------------------------------------------
+Total subprograms with at least one VC proved by examiner:              3
+Total subprograms with at least one VC proved by simplifier:            0
+Total subprograms with at least one VC proved by contradiction:         0
+Total subprograms with at least one VC proved with user proof rule:     0
+Total subprograms with at least one VC proved by Victor:                0
+Total subprograms with at least one VC proved by Riposte:               0
+Total subprograms with at least one VC proved using checker:            0
+Total subprograms with at least one VC discharged by review:            0
+
+Maximum extent of strategies used for fully proved subprograms:
+-------------------------------------------------------------------------
+Total subprograms with proof completed by examiner:                     3
+Total subprograms with proof completed by simplifier:                   0
+Total subprograms with proof completed with user defined rules:         0
+Total subprograms with proof completed by Victor:                       0
+Total subprograms with proof completed by Riposte:                      0
+Total subprograms with proof completed by checker:                      0
+Total subprograms with VCs discharged by review:                        0
+
+Overall subprogram summary:
+-------------------------------------------------------------------------
+Total subprograms fully proved:                                         3
+Total subprograms with at least one undischarged VC:                    0
+Total subprograms with at least one false VC:                           0
+                                                                    -----
+Total subprograms for which VCs have been generated:                    3
+
+
+ZombieScope Summary:
+-------------------------------------------------------------------------
+Total subprograms for which DPCs have been generated:                   0
+Total number subprograms with dead paths found:                         0
+Total number of dead paths found:                                       0
+
+
+VC summary:
+-------------------------------------------------------------------------
+Note: (User) denotes where the Simplifier has proved VCs using one or
+      more user-defined proof rules.
+
+Total VCs by type:
+------------------
+                    Total   Examiner
+Assert/Post             3          3
+Precondition            0          0
+Check stmnt.            0          0
+Runtime check           0          0
+Refinem. VCs            6          6
+Inherit. VCs            0          0
+====================================
+Totals:                 9          9
+%Totals:                        100%
+
+===================== End of Semantic Analysis Summary ========================

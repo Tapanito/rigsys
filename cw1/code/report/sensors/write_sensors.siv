@@ -1,0 +1,51 @@
+*****************************************************************************
+                       Semantic Analysis of SPARK Text
+                              Examiner GPL 2012
+             Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+*****************************************************************************
+
+
+CREATED 22-OCT-2015, 13:33:18  SIMPLIFIED 22-OCT-2015, 13:33:28
+
+SPARK Simplifier GPL 2012
+Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+
+procedure Sensors.Write_Sensors
+
+
+
+
+For path(s) from start to run-time check associated with statement of line 15:
+
+procedure_write_sensors_1.
+*** true .          /* all conclusions proved */
+
+
+For path(s) from start to run-time check associated with statement of line 16:
+
+procedure_write_sensors_2.
+*** true .          /* all conclusions proved */
+
+
+For path(s) from start to run-time check associated with statement of line 17:
+
+procedure_write_sensors_3.
+*** true .          /* all conclusions proved */
+
+
+For path(s) from start to finish:
+
+procedure_write_sensors_4.
+*** true .          /* all conclusions proved */
+
+
+For checks of refinement integrity: 
+
+procedure_write_sensors_5.
+*** true .          /* all conclusions proved */
+
+
+procedure_write_sensors_6.
+*** true .          /* all conclusions proved */
+
+

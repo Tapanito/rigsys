@@ -1,0 +1,23 @@
+*****************************************************************************
+                       Semantic Analysis of SPARK Text
+                              Examiner GPL 2012
+             Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+*****************************************************************************
+
+
+CREATED 22-OCT-2015, 13:33:17  SIMPLIFIED 22-OCT-2015, 13:33:28
+
+SPARK Simplifier GPL 2012
+Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+
+procedure Console.Enable_Reset
+
+
+
+
+
+
+@@@@@@@@@@  VC: procedure_enable_reset_1.  @@@@@@@@@@
+***  Proved C1:  true
+***  PROVED VC.
+

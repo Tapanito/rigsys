@@ -1,0 +1,134 @@
+*****************************************************************************
+                       Semantic Analysis of SPARK Text
+                              Examiner GPL 2012
+             Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+*****************************************************************************
+
+
+CREATED 22-OCT-2015, 13:33:18  SIMPLIFIED 22-OCT-2015, 13:33:29
+
+SPARK Simplifier GPL 2012
+Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+
+function Sensors.Read_Sensor_Majority
+
+
+
+
+
+
+@@@@@@@@@@  VC: function_read_sensor_majority_1.  @@@@@@@@@@
+***  Proved C1:  sensor_1 >= sensor_type__first
+     using hypothesis H1.
+***  Proved C2:  sensor_1 <= sensor_type__last
+     using hypothesis H2.
+***  PROVED VC.
+
+
+@@@@@@@@@@  VC: function_read_sensor_majority_2.  @@@@@@@@@@
+***  Proved C1:  sensor_1 >= sensor_type__first
+     using hypothesis H1.
+***  Proved C2:  sensor_1 <= sensor_type__last
+     using hypothesis H2.
+***  PROVED VC.
+
+
+@@@@@@@@@@  VC: function_read_sensor_majority_3.  @@@@@@@@@@
+***  Proved C1:  sensor_2 >= sensor_type__first
+     using hypothesis H3.
+***  Proved C2:  sensor_2 <= sensor_type__last
+     using hypothesis H4.
+***  PROVED VC.
+
+
+@@@@@@@@@@  VC: function_read_sensor_majority_4.  @@@@@@@@@@
+-S-  Applied substitution rule read_sensor__rules(1).
+     This was achieved by replacing all occurrences of undef_value by:
+          200.
+<S>  New C1:  200 >= sensor_type__first
+<S>  New C2:  200 <= sensor_type__last
+-S-  Applied substitution rule read_sensor__rules(8).
+     This was achieved by replacing all occurrences of sensor_type__first by:
+          0.
+<S>  New H1:  sensor_1 >= 0
+<S>  New H3:  sensor_2 >= 0
+<S>  New H5:  sensor_3 >= 0
+<S>  New C1:  true
+-S-  Applied substitution rule read_sensor__rules(9).
+     This was achieved by replacing all occurrences of sensor_type__last by:
+          200.
+<S>  New H2:  sensor_1 <= 200
+<S>  New H4:  sensor_2 <= 200
+<S>  New H6:  sensor_3 <= 200
+<S>  New C2:  true
+***  Proved C1:  true
+***  Proved C2:  true
+***  PROVED VC.
+
+
+@@@@@@@@@@  VC: function_read_sensor_majority_5.  @@@@@@@@@@
+---  Hypothesis H8 has been replaced by "true".  (It is already present, as H1).
+---  Hypothesis H9 has been replaced by "true".  (It is already present, as H2).
+---  Hypothesis H10 has been replaced by "true".  (It is already present, as H1)
+          .
+---  Hypothesis H11 has been replaced by "true".  (It is already present, as H2)
+          .
+***  Proved C1:  sensor_1 >= sensor_type__first
+     using hypothesis H1.
+***  Proved C2:  sensor_1 <= sensor_type__last
+     using hypothesis H2.
+***  PROVED VC.
+
+
+@@@@@@@@@@  VC: function_read_sensor_majority_6.  @@@@@@@@@@
+---  Hypothesis H9 has been replaced by "true".  (It is already present, as H1).
+---  Hypothesis H10 has been replaced by "true".  (It is already present, as H2)
+          .
+---  Hypothesis H11 has been replaced by "true".  (It is already present, as H1)
+          .
+---  Hypothesis H12 has been replaced by "true".  (It is already present, as H2)
+          .
+***  Proved C1:  sensor_1 >= sensor_type__first
+     using hypothesis H1.
+***  Proved C2:  sensor_1 <= sensor_type__last
+     using hypothesis H2.
+***  PROVED VC.
+
+
+@@@@@@@@@@  VC: function_read_sensor_majority_7.  @@@@@@@@@@
+---  Hypothesis H10 has been replaced by "true".  (It is already present, as H3)
+          .
+---  Hypothesis H11 has been replaced by "true".  (It is already present, as H4)
+          .
+---  Hypothesis H12 has been replaced by "true".  (It is already present, as H3)
+          .
+---  Hypothesis H13 has been replaced by "true".  (It is already present, as H4)
+          .
+***  Proved C1:  sensor_2 >= sensor_type__first
+     using hypothesis H3.
+***  Proved C2:  sensor_2 <= sensor_type__last
+     using hypothesis H4.
+***  PROVED VC.
+
+
+@@@@@@@@@@  VC: function_read_sensor_majority_8.  @@@@@@@@@@
+---  Hypothesis H12 has been replaced by "true".  (It is already present, as 
+          H10).
+---  Hypothesis H13 has been replaced by "true".  (It is already present, as 
+          H11).
+***  Proved C1:  undef_value >= sensor_type__first
+     using hypothesis H10.
+***  Proved C2:  undef_value <= sensor_type__last
+     using hypothesis H11.
+***  PROVED VC.
+
+
+@@@@@@@@@@  VC: function_read_sensor_majority_9.  @@@@@@@@@@
+***  Proved C1:  true
+***  PROVED VC.
+
+
+@@@@@@@@@@  VC: function_read_sensor_majority_10.  @@@@@@@@@@
+***  Proved C1:  true
+***  PROVED VC.
+

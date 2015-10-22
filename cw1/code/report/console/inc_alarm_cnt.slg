@@ -1,0 +1,42 @@
+*****************************************************************************
+                       Semantic Analysis of SPARK Text
+                              Examiner GPL 2012
+             Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+*****************************************************************************
+
+
+CREATED 22-OCT-2015, 13:33:18  SIMPLIFIED 22-OCT-2015, 13:33:28
+
+SPARK Simplifier GPL 2012
+Copyright (C) 2012 Altran Praxis Limited, Bath, U.K.
+
+procedure Console.Inc_Alarm_Cnt
+
+
+
+
+
+
+@@@@@@@@@@  VC: procedure_inc_alarm_cnt_1.  @@@@@@@@@@
+***  Proved C1:  alarm_cnt + 1 >= integer__first
+     using hypothesis H1.
+-S-  Applied substitution rule inc_alarm_cn_rules(3).
+     This was achieved by replacing all occurrences of integer__last by:
+          2147483647.
+<S>  New H2:  alarm_cnt <= 2147483647
+<S>  New H3:  alarm_cnt < 2147483647
+<S>  New C2:  alarm_cnt <= 2147483646
+***  Proved C2:  alarm_cnt <= 2147483646
+     using hypothesis H3.
+***  PROVED VC.
+
+
+@@@@@@@@@@  VC: procedure_inc_alarm_cnt_2.  @@@@@@@@@@
+***  Proved C1:  true
+***  PROVED VC.
+
+
+@@@@@@@@@@  VC: procedure_inc_alarm_cnt_3.  @@@@@@@@@@
+***  Proved C1:  true
+***  PROVED VC.
+
